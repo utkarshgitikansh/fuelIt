@@ -30,8 +30,8 @@ class Home extends React.Component {
       value4: "",
       value5: "",
       flag: false,
-      latitude: null,
-      longitude: null,
+      latitude: "",
+      longitude: "",
       address: "",
       isButtonDisabled1: false,
       isButtonDisabled2: false,
@@ -71,6 +71,18 @@ class Home extends React.Component {
     };
   };
 
+  // componentDidMount() {
+  //   navigator.geolocation.getCurrentPosition(function (position) {
+  //     console.log("Latitude is :", position.coords.latitude);
+  //     console.log("Longitude is :", position.coords.longitude);
+
+  //     this.setState({
+  //       latitude: position.coords.latitude,
+  //       longitude: position.coords.longitude,
+  //     });
+  //   });
+  // }
+
   position = () => {
     console.log("yoo" + this.state.latitude);
 
@@ -85,7 +97,8 @@ class Home extends React.Component {
     });
 
     fetch(
-      `https://updateitt.herokuapp.com/locate?lat=${this.state.latitude}&lon=${this.state.longitude}`,
+      // `https://updateitt.herokuapp.com/locate?lat=${this.state.latitude}&lon=${this.state.longitude}`,
+      `https://us1.locationiq.com/v1/reverse.php?key=246b8ad3629517&lat=${this.state.latitude}&lon=${this.state.longitude}&format=json`,
       {
         method: "GET",
       }
@@ -93,11 +106,9 @@ class Home extends React.Component {
       .then((res) => res.json())
       .then(
         (result) => {
-          result.results.forEach((element) => {
-            console.log(element);
-            this.setState({
-              address: [...this.state.address, element.formatted_address],
-            });
+          console.log(result);
+          this.setState({
+            address: [...this.state.address, result.display_name],
           });
         },
 
