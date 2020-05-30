@@ -12,7 +12,7 @@ const GridWrapper = styled.div`
 `;
 
 export const COLOR = {
-  bgColor: `#96ceb4`,
+  bgColor: `#fe4a49`,
   bgColor2: `#fff`,
 };
 export const Contact = () => (

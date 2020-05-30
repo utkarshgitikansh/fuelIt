@@ -9,9 +9,7 @@ ReactDOM.render(
     <App />
     <div class="d-flex justify-content-center">
       {/* &copy;  */}
-      Creating proudly since {new Date().getFullYear()} ©{" "}
-      {/* <a href="https://www.mdbootstrap.com"> MDBootstrap.com </a> */}
-      utkarshgitikansh
+      Creating proudly since {new Date().getFullYear()} ©utkarshgitikansh
     </div>
   </React.StrictMode>,
   document.getElementById("root")

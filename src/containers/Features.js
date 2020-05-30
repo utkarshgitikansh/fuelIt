@@ -12,7 +12,7 @@ const GridWrapper = styled.div`
 `;
 
 export const COLOR = {
-  bgColor: `#96ceb4`,
+  bgColor: `#fe4a49`,
   bgColor2: `#fff`,
 };
 
@@ -25,19 +25,15 @@ export const Features = () => (
       <Card.Text>
         <div class="d-flex flex-row">
           <div class="feature">
-            <h4
+            <h5
               style={{
                 color: COLOR.bgColor,
               }}
             >
-              Industries Services
-            </h4>
-
+              <b>Industries Services</b>
+            </h5>
             <br />
-
-            <p>
-              <ul> Real Estate &#8211; Commercial &#038; Residential</ul>{" "}
-            </p>
+            <ul> Real Estate &#8211; Commercial &#038; Residential</ul>{" "}
             <p>
               <ul>Hotels</ul>
             </p>

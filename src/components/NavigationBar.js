@@ -19,30 +19,29 @@ const NavigationBar = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
-      <Navbar sticky="top" light expand="md">
-        <div href="/">
-          <img class="img2" src="delivery_logo.png" />
-        </div>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
-            <NavItem>
-              <NavLink href="/">Home</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/about">About us</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/features">Services</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/location">Order History</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/contact">Reach us</NavLink>
-            </NavItem>
-            {/* <NavItem>
+    <Navbar sticky="top" light expand="md">
+      <div href="/">
+        <img class="img2" src="delivery_logo.png" />
+      </div>
+      <NavbarToggler onClick={toggle} />
+      <Collapse isOpen={isOpen} navbar>
+        <Nav className="mr-auto navback" navbar>
+          <NavItem>
+            <NavLink href="/">Home</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="/about">About us</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="/features">Services</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="/location">Order History</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="/contact">Reach us</NavLink>
+          </NavItem>
+          {/* <NavItem>
               <NavLink href="https://github.com/reactstrap/reactstrap">
                 GitHub
               </NavLink>
@@ -58,10 +57,9 @@ const NavigationBar = (props) => {
                 <DropdownItem>Reset</DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown> */}
-          </Nav>
-        </Collapse>
-      </Navbar>
-    </div>
+        </Nav>
+      </Collapse>
+    </Navbar>
   );
 };
 

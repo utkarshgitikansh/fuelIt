@@ -38,7 +38,7 @@ class Home extends React.Component {
       isButtonDisabled3: false,
       data: "",
       val: [],
-      bgColor: `#96ceb4`,
+      bgColor: `#fe4a49`,
       bgColor2: `#fff`,
     };
 
@@ -296,7 +296,9 @@ class Home extends React.Component {
             <Card class="card">
               <Card.Img />
               <Card.Body>
-                <Card.Title>Who are you ?</Card.Title>
+                <Card.Title>
+                  <b>Who are you ??</b>
+                </Card.Title>
                 <Card.Text>
                   <Form onSubmit={this.handleSubmit}>
                     <Form.Group controlId="formBasicEmail">
@@ -325,6 +327,9 @@ class Home extends React.Component {
                         //   border: this.state.bgColor,
                         // }}
                       />
+                      <Form.Text className="text-muted">
+                        Fuel capacity in litres (L)
+                      </Form.Text>
                     </Form.Group>
                     <Form.Group controlId="formBasicEmail">
                       <Form.Label>Type of vehicle</Form.Label>
@@ -337,9 +342,12 @@ class Home extends React.Component {
                         //   border: this.state.bgColor,
                         // }}
                       />
+                      <Form.Text className="text-muted">
+                        Two wheeler or Four wheeler
+                      </Form.Text>
                     </Form.Group>
                     <Form.Group controlId="formBasicEmail">
-                      <Form.Label>Name :</Form.Label>
+                      <Form.Label>Name</Form.Label>
                       <Form.Control
                         type="text"
                         placeholder="Enter Customer Name"
@@ -351,7 +359,7 @@ class Home extends React.Component {
                       />
                     </Form.Group>
                     <Form.Group controlId="formBasicEmail">
-                      <Form.Label>Address :</Form.Label>
+                      <Form.Label>Address</Form.Label>
                       <Form.Control
                         type="text"
                         placeholder="Enter type of vehicle"
@@ -383,7 +391,9 @@ class Home extends React.Component {
             <Card class="card">
               <Card.Img />
               <Card.Body>
-                <Card.Title>Where are you ?</Card.Title>
+                <Card.Title>
+                  <b>Where are you ??</b>
+                </Card.Title>
                 <Card.Text>
                   <p>
                     <div id="map"></div>
@@ -405,18 +415,20 @@ class Home extends React.Component {
             </Card>
 
             <CardsForm
-              value1="Order Details"
+              value1="Order Details !!"
               value2={order1}
               value3={order2}
               value4={order3}
-              value5={order4}
-              value6={order5}
+              value5={order5}
+              value6={order4}
             />
 
             <Card class="card">
               <Card.Img />
               <Card.Body>
-                <Card.Title>Confirm Order</Card.Title>
+                <Card.Title>
+                  <b>Confirm Order ✔</b>
+                </Card.Title>
                 <Card.Text>
                   <p></p>
                 </Card.Text>

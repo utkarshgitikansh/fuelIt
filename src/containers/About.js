@@ -15,7 +15,7 @@ const GridWrapper = styled.div`
 `;
 
 export const COLOR = {
-  bgColor: `#96ceb4`,
+  bgColor: `#fe4a49`,
   bgColor2: `#fff`,
 };
 
@@ -56,7 +56,11 @@ export const About = () => (
     </Card>
     <div class="d-flex flex-row">
       <div class="quote">
-        <h3>
+        <h3
+          style={{
+            color: COLOR.bgColor,
+          }}
+        >
           "It is only our humanity that can deliver us from the brutality of our
           achievements"
         </h3>

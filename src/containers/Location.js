@@ -40,7 +40,7 @@ class Location extends React.Component {
       data: "",
       val: [],
       loading: true,
-      bgColor: `#96ceb4`,
+      bgColor: `#fe4a49`,
       bgColor2: `#fff`,
     };
   }
@@ -132,7 +132,13 @@ class Location extends React.Component {
             <Card.Body>
               {/* <Card.Title>Order History</Card.Title> */}
               <Card.Text>
-                <h3>Order History</h3>
+                <h3
+                  style={{
+                    color: this.state.bgColor,
+                  }}
+                >
+                  Order History
+                </h3>
                 <br />
                 <Button
                   variant="primary"
