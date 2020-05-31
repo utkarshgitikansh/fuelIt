@@ -290,7 +290,7 @@ class Home extends React.Component {
             </Card.Body>
           </Card> */}
 
-          <div class="col">
+          <div class="col width">
             {/* <Forms handleSubmit={this.handleSubmit} /> */}
 
             <Card class="card">

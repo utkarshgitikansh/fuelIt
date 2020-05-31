@@ -135,22 +135,29 @@ class Location extends React.Component {
                 <h3
                   style={{
                     color: this.state.bgColor,
+                    textAlign: "center",
                   }}
                 >
                   Order History
                 </h3>
                 <br />
-                <Button
-                  variant="primary"
-                  onClick={this.fetch}
-                  disabled={this.state.isButtonDisabled}
+                <div
                   style={{
-                    backgroundColor: this.state.bgColor,
-                    border: this.state.bgColor,
+                    textAlign: "center",
                   }}
                 >
-                  Fetch Order
-                </Button>
+                  <Button
+                    variant="primary"
+                    onClick={this.fetch}
+                    disabled={this.state.isButtonDisabled}
+                    style={{
+                      backgroundColor: this.state.bgColor,
+                      border: this.state.bgColor,
+                    }}
+                  >
+                    Fetch Orders
+                  </Button>
+                </div>
                 <br />
                 {datas}
               </Card.Text>

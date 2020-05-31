@@ -31,20 +31,31 @@ export const Contact = () => (
           <h3
             style={{
               color: COLOR.bgColor,
+              textAlign: "center",
             }}
           >
             WE ARE HERE
           </h3>
           <br />
           <p>
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH
+            <p>
+              <b>We are :</b> FuelIt
+            </p>
+            <p>
+              <b>Address :</b> http://fuelit.herokuapp.com/
+            </p>
           </p>
         </Card.Text>
       </Card.Body>
     </Card>
-    <div class="d-flex flex-row">
-      <div class="quote">
+    <div class="d-flex flex-column">
+      <div
+        class="quote"
+        style={{
+          color: COLOR.bgColor,
+          textAlign: "center",
+        }}
+      >
         <h3>
           "The improvement of understanding is for two ends: first, our own
           increase of knowledge; secondly, to enable us to deliver that

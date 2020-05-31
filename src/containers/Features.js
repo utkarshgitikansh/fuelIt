@@ -33,21 +33,24 @@ export const Features = () => (
               <b>Industries Services</b>
             </h5>
             <br />
-            <ul> Real Estate &#8211; Commercial &#038; Residential</ul>{" "}
             <p>
-              <ul>Hotels</ul>
+              <li> Real Estate &#8211; Commercial &#038; Residential</li>{" "}
+            </p>
+
+            <p>
+              <li>Hotels</li>
             </p>
             <p>
-              <ul>Schools &#038; Universities</ul>
+              <li>Schools &#038; Universities</li>
             </p>
             <p>
-              <ul>Manufacturing </ul>
+              <li>Manufacturing </li>
             </p>
             <p>
-              <ul>Logistics</ul>
+              <li>Logistics</li>
             </p>
             <p>
-              <ul>Infrastructure</ul>
+              <li>Infrastructure</li>
             </p>
           </div>
           <div class="feature2">

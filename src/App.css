@@ -47,6 +47,10 @@
   background-color: #fed766;
 }
 
+.width {
+  min-width: max-content;
+}
+
 .nav-item {
   margin-left: 80px;
 }
@@ -117,9 +121,15 @@ img {
 }
 
 .about {
-  margin: auto;
-  margin-top: 50px;
-  margin-right: 0px;
+  text-align: center;
+  padding: 20px;
+}
+
+.image_logo {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  margin: 20px;
 }
 
 .button {
@@ -134,7 +144,8 @@ img {
 }
 
 .quote {
-  margin: auto;
+  width: 100%;
+  margin: 20px;
   padding: 50px;
 }
 

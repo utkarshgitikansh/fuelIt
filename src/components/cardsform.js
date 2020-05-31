@@ -10,6 +10,12 @@ const GridWrapper = styled.div`
   grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: minmax(25px, auto);
 `;
+
+export const COLOR = {
+  bgColor: `#fe4a49`,
+  bgColor2: `#fff`,
+};
+
 export const CardsForm = (props) => (
   <Card>
     <Card.Img />
@@ -17,17 +23,72 @@ export const CardsForm = (props) => (
       <Card.Title>
         <b>{props.value1}</b>
       </Card.Title>
-      <Card.Text>
-        <h5>Fuel type : {props.value2}</h5>
 
-        <h5>Fuel capacity : {props.value3}</h5>
+      {props.value2 == null ? (
+        <div>
+          <br />
+          <h4
+            style={{
+              color: COLOR.bgColor,
+              textAlign: "center",
+            }}
+          >
+            "Your order details will be displayed here"
+          </h4>
 
-        <h5>Customer vehicle : {props.value4}</h5>
+          <div
+            class="image_logo"
+            style={{
+              textAlign: "center",
+            }}
+          >
+            <img src="delivery_truck.png" />
+          </div>
+        </div>
+      ) : (
+        <Card.Text>
+          <h5
+            style={{
+              color: COLOR.bgColor,
+              textAlign: "center",
+            }}
+          >
+            Fuel type : {props.value2}
+          </h5>
 
-        <h5>Customer Name : {props.value5}</h5>
+          <h5
+            style={{
+              color: COLOR.bgColor,
+            }}
+          >
+            Fuel capacity : {props.value3}
+          </h5>
 
-        <h5>Address : {props.value6}</h5>
-      </Card.Text>
+          <h5
+            style={{
+              color: COLOR.bgColor,
+            }}
+          >
+            Customer vehicle : {props.value4}
+          </h5>
+
+          <h5
+            style={{
+              color: COLOR.bgColor,
+            }}
+          >
+            Customer Name : {props.value5}
+          </h5>
+
+          <h5
+            style={{
+              color: COLOR.bgColor,
+            }}
+          >
+            Address : {props.value6}
+          </h5>
+        </Card.Text>
+      )}
 
       {/* <Button variant="primary">Go somewhere</Button> */}
     </Card.Body>

@@ -36,6 +36,7 @@ export const About = () => (
           <h3
             style={{
               color: COLOR.bgColor,
+              textAlign: "center",
             }}
           >
             WE ARE FUELIT
@@ -54,18 +55,24 @@ export const About = () => (
         </Card.Text>
       </Card.Body>
     </Card>
-    <div class="d-flex flex-row">
+    <div class="d-flex flex-column">
       <div class="quote">
         <h3
           style={{
             color: COLOR.bgColor,
+            textAlign: "center",
           }}
         >
           "It is only our humanity that can deliver us from the brutality of our
           achievements"
         </h3>
       </div>
-      <div class="about">
+      <div
+        class="image_logo"
+        style={{
+          textAlign: "center",
+        }}
+      >
         <img src="delivery_truck.png" />
       </div>
     </div>
