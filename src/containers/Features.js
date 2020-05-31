@@ -23,14 +23,32 @@ export const Features = () => (
     <Card.Body>
       <Card.Title></Card.Title>
       <Card.Text>
-        <div class="d-flex flex-row">
-          <div class="feature">
-            <h5
+        <div class="d-flex flex-column">
+          <h3
+            style={{
+              color: COLOR.bgColor,
+              textAlign: "center",
+            }}
+          >
+            "Coming Soon !!"
+          </h3>
+          <div
+            style={{
+              color: COLOR.bgColor,
+              textAlign: "center",
+              margin: "40px",
+            }}
+          >
+            <img
               style={{
-                color: COLOR.bgColor,
+                height: "20%",
+                width: "20%",
               }}
-            >
-              <b>Industries Services</b>
+              class="image"
+              src="delivery_truck.png"
+            />
+          </div>
+          {/* <b>Industries Services</b>
             </h5>
             <br />
             <p>
@@ -51,11 +69,11 @@ export const Features = () => (
             </p>
             <p>
               <li>Infrastructure</li>
-            </p>
-          </div>
-          <div class="feature2">
+            </p> */}
+
+          {/* <div class="feature2">
             <img class="image" src="delivery_truck.png" />
-          </div>
+          </div> */}
         </div>
       </Card.Text>
 
